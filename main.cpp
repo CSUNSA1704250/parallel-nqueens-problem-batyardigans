@@ -123,7 +123,7 @@ int main(int argc, char*argv[]) {
     std::cout << "Execution time: "  << std::fixed << std::setprecision(9) << execution_time << " seconds." <<std::endl;
     std::cout << "Number of thread: "  << std::setprecision(9) << NTHREADS << " threads." <<std::endl;
     
-    std::ofstream outfile ("solutions.txt");
+    std::ofstream outfile ("files/solutions.txt");
     outfile << "#Solutions "<<"for "<<boardSize<<" queens\n";
     outfile << nsolution << '\n';
     

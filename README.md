@@ -21,9 +21,16 @@ n_solutions <pos_0>  <pos_1> . . . <pos_n_queens - 1>
 * `graph.png` Show image of the first solution
 
 
-## Compilation
-
+## Compilation and Execution
+N-queens compilation
+```
+g++ -o bin/main -pthread main.cpp
+```
+N-queens execution `<nameofprogram> -problemType [all, find] -N <queens>` example:
+```
+./bin/main find 13
+```
 Generate dot file and image of the first solution N-queens
 ```
-$> make image
+make image
 ```
