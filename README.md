@@ -24,7 +24,7 @@ n_solutions <pos_0>  <pos_1> . . . <pos_n_queens - 1>
 ## Compilation and Execution
 N-queens compilation
 ```
-g++ -o bin/main -pthread main.cpp
+g++ -o bin/main -pthread main.cpp -O2
 ```
 N-queens execution `<nameofprogram> -problemType [all, find] -N <queens>` example:
 ```
