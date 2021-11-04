@@ -24,11 +24,11 @@ n_solutions <pos_0>  <pos_1> . . . <pos_n_queens - 1>
 ## Compilation and Execution
 N-queens compilation
 ```
-g++ -o bin/main -pthread main.cpp -O2
+g++ -o bin/main -pthread main.cpp -fopenmp
 ```
 N-queens execution `<nameofprogram> -problemType [all, find] -N <queens>` example:
 ```
-./bin/main find 13
+./bin/main all 13
 ```
 Generate dot file and image of the first solution N-queens
 ```
