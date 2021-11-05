@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <cstdlib>
+#include<sstream>
 using namespace std;
 
 void generate_dot(ofstream &file, vector<int> &vec){
@@ -45,12 +46,15 @@ int main(){
     }
 
     vector<int> vec_num;
+    stringstream ss(linea);
 
-    for(int i=2; i<linea.length(); i=i+2){
-        int num =  linea[i] - 48;
-        vec_num.push_back(num);
+    int value;
+    while (ss >> value){
+        vec_num.push_back(value);
+
     }
- 
+    
+    
     ofstream file;
     generate_dot(file, vec_num);
     return 0;
