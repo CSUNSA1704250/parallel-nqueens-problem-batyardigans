@@ -50,7 +50,7 @@ void setQueen(int queens[], int row, int col, int id) {
 
 }
 
-void solve() {
+void solve(int SIZE) {
   int myid=0;
 
 #pragma omp parallel
@@ -73,7 +73,7 @@ int main(int argc, char*argv[]) {
 
   SIZE = atoi(argv[1]);
   double st=omp_get_wtime();
-  solve();
+  solve(SIZE);
 
   double en=omp_get_wtime();
   printf("Execution time:  %lf\n",en-st);
